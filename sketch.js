@@ -21,7 +21,7 @@ function setup() {
 	ground = new Ground(200, 672, 2000, 20);
 
 	dustbin1 = new Dustbin(550, 535, 230, 260);
-
+	
 	Engine.run(engine);
 }
 
@@ -40,9 +40,6 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper.body, paper.body.position, {x:205, y:-305});
+		Matter.Body.applyForce(paper.body, paper.body.position, {x:180, y:-325});
 	}
 }
-
-
-
